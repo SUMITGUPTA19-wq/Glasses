@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/first.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="menu"><i class="fa-solid fa-bars-staggered"></i></div>
+      <div class="brand"><img src="/logo.webp" alt="brand logo" /></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <div class="share">
+        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+      </div>
+    </nav>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const navUl = document.querySelector(".nav ul");
+
+      menu.addEventListener("click", () => {
+        navUl.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
