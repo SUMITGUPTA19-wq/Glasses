@@ -2,6 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: #000;
+    
+}
+
+html,body{
+    background-color: #fff;
 }
 
 .nav{
@@ -218,11 +224,102 @@
     border: none;
 }
 
-
 .btn-touch:hover{
     background-color: #3a5bd9;
     cursor: pointer;
 }
+
+/* section2  */
+
+.section2{
+    display: flex;
+    height: 800px;
+    width: 100%;
+    border: 2px solid red;
+    background-color: #fff;
+    padding: 100px 0px 50px;
+    justify-content: center;
+}
+
+.phone{
+    height: 592px;
+    width: 415px;
+    background-image: url(/index-1-415x592.webp);
+    background-size: cover;
+    border: 1px solid black;
+    display: flex;                    
+    justify-content: flex-start;
+}
+
+.section-main{
+    margin: 0px 0px 0px 70px;
+    width: 50%;
+    height: 680px;
+    border: 1px solid black;
+    padding: 0px 0px 15px;
+    display: flex; 
+    
+}
+
+.boxes-main{
+    margin: 0px 70px 0px 0px;
+    width: 50%;
+    height: 680px;
+    border: 1px solid black;
+    padding: 0px 0px 15px;
+    display: flex;        
+    flex-wrap: wrap;
+    gap: 0px 30px;   
+}
+
+.box{
+    height: 310px;
+    width: 300px;
+    margin: 0px 0px 30px;
+    padding: 0px 15px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.box-inner{
+    height: 310px;
+    width: 270px;
+    /* padding: 36px 15px 38px;
+    border: 1px solid black;   
+}
+ 
+.box-ineer h1{
+     text-align: center;
+     margin-top: 60px;
+     font-size: 30px;
+}
+
+.btn-touch1{
+    padding: 20px 35px;
+    font-size: 1rem;
+    color: white;
+    background-color: #5b7cf5;
+    border: none;
+    margin: 20px 0px 0px 20px;
+}
+
+.box-ineer h3{
+     text-align: center;
+     margin-top: 120px;
+     font-size: 18px;
+}
+
+.box-ineer p{
+     text-align: center;
+     margin-top: 10px;
+     font-size: 16px;
+} 
+
+
+
+
+
+
 
 
 
