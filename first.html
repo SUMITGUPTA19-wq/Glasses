@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/first.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,13 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/first.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- NAVBAR -->
 
     <nav class="nav">
-      <div class="menu"><i class="fa-solid fa-bars-staggered"></i></div>
+      <div class="menu"><i class="fa-solid fa-bars"></i></div>
       <div class="brand"><img src="/logo.webp" alt="brand logo" /></div>
       <ul>
         <li><a href="#">Home</a></li>
@@ -34,27 +38,64 @@
     <!-- HERO SECTION -->
 
     <section>
-      <div class="hero">
-        <div class="hero-content">
-          <h2>Mobile App Development</h2>
-          <p>
-            Since our establishment, we have been delvering high-quality and sustainable <br />
-             software solution for corporate purposes of
-            worldwide businesses
-          </p>
-          <button class="btn-touch">GET IN TOUCH</button>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero">
+              <div class="hero-content">
+                <h2>Mobile App Development</h2>
+                <p>
+                  Since our establishment, we have been delivering high-quality
+                  and sustainable <br />
+                  software solution for corporate purposes of worldwide
+                  businesses
+                </p>
+                <button class="btn-touch">GET IN TOUCH</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero2">
+              <div class="hero-content">
+                <h2>Experienced Team</h2>
+                <p>
+                  We are a team of qualified software developers, aimed at
+                  creating <br />
+                  unique and powerful tools for your business & everyday life.
+                </p>
+                <button class="btn-touch">GET IN TOUCH</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero3">
+              <div class="hero-content">
+                <h2>Award-Winning Software</h2>
+                <p>
+                  The software solutions developed by our company have been
+                  <br />
+                  numerously awarded for usability and innovative features.
+                </p>
+                <button class="btn-touch">GET IN TOUCH</button>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <!-- <div class="hero"></div>
-      <div class="hero"></div> -->
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
-      const menu = document.querySelector(".menu");
-      const navUl = document.querySelector(".nav ul");
-
-      menu.addEventListener("click", () => {
-        navUl.classList.toggle("open");
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
     </script>
   </body>
