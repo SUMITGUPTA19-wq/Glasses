@@ -295,13 +295,13 @@ html,body{
 }
 
 .box{
-    height: 300px;
-    width: 310px;
+    height: 310px;
+    width: 270px;
     margin: 0px 0px 30px;
     padding: 0px 15px;
     box-sizing: border-box;
     flex-wrap: wrap;
-    border: #000 2px solid;  
+    /* border: #000 2px solid;   */
     border-radius: 3px;
 }
 
@@ -405,6 +405,7 @@ html,body{
         font-size: 16px;
     }
 }
+}
 /* ── 480px se chhota ── Small Mobile ── */
 @media (max-width: 480px) {
 
@@ -436,15 +437,13 @@ html,body{
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    padding-right:61px ;
-    
+    padding-right:61px ;    
 }
 
 .section-3-main2 h2{
     font-size: clamp(28px, 2vw, 35px);
     color: #fff;
-    text-align: end;
-    
+    text-align: end;   
 }
 
 .section-3-main2 p{
@@ -462,7 +461,6 @@ html,body{
     background-color: #5b7cf5;
     border: none;
     text-align: end;
-
 }
 
 .btn-touch3{
@@ -474,13 +472,77 @@ html,body{
     border: 2px solid white;
     align-content: end;
     margin-left: 15px;
-
 }
 
 .btn-wrapper{
     display: flex;
     justify-content: end;
-    
+}
+
+            /* SECTION 4 */
+
+.section4{
+    height: 1524PX;
+    width: 100%;
+    /* border: #000 2PX solid; */
+    padding: 50px 0px;
+}
+
+.section4-main{
+    padding: 0px 15px;
+}
+
+.section4-first{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4-second{
+    margin-top: 25px;
+    padding: 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 17px;  
+}
+
+.section4-tags{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+}
+
+.section4-tags h4 a{
+     color: gray;
+     text-decoration: none;
+}
+
+.line{
+    height: 22px;
+    width: 0px;
+    border: 1px gray solid;
+    display: flex;
+    justify-content: center;
+}
+
+.box-outer{
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.box-1{
+    height: 353px;
+    width: 425px;
+    margin: 0px 0px 30px;
 
 }
 
