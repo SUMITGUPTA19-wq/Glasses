@@ -261,6 +261,7 @@ html,body{
     padding: 100px 0px 50px;
     justify-content: center;
     position: relative;
+    border: #000 2px solid;
 }
 
 .phone{
@@ -271,27 +272,30 @@ html,body{
     margin-left: 50px;
     display: flex;                    
     justify-content: flex-start;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    /* border: #000 2px solid; */
+    border: #000 2px solid;
+    background-repeat: no-repeat;
+     background-position: center;   /*ye 3line cloud se add ki hai help leke */
+    flex-shrink: 0;
 }
 
 .section-main{
     margin: 0px 0px 0px 70px;
     width: 50%;
-    height: 680px;
+    /* height: 680px; */
     padding: 0px 0px 15px;
-    display: flex;    
+    display: flex;  
+    flex-shrink: 0;  /*ye line bhi colude se li hai*/
 }
 
 .boxes-main{
     margin: 0px 70px 0px 0px;
     width: 50%;
-    height: 680px;
+    height: auto;
     padding: 0px 0px 15px;
     display: flex;        
     flex-wrap: wrap;
-    gap: 0px 30px;   
+    gap: 0px 30px; 
+    border: #000 2px solid;  
 }
 
 .box{
@@ -301,7 +305,7 @@ html,body{
     padding: 0px 15px;
     box-sizing: border-box;
     flex-wrap: wrap;
-    /* border: #000 2px solid;   */
+    border: #000 2px solid;  
     border-radius: 3px;
 }
 
@@ -325,7 +329,8 @@ html,body{
     color: white;
     background-color: #5b7cf5;
     border: none;
-    margin: 20px 15px ;
+    /* margin: 20px 15px ; */
+    margin: 20px auto 0;   
 }
 
 .btn-touch1 a{
@@ -352,82 +357,110 @@ html,body{
      line-height: 1.7;
 } 
 
-/* ── 800px se 960px ── Tablet Landscape ── */
-@media (max-width: 960px) {
 
-    .section-main {
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-        height: auto;            
-    }
+
+@media (max-width: 1310px) {  
+  
+  .boxes-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+  }
+
+  .box {
+    flex-wrap: nowrap;  
+    /* ya width fix karo */
+    width: calc(50% - 20px);  
+} 
+
+  .btn-touch1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1308px) {
+
+      .btn-touch1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+  }
+
+} 
+
+@media (max-width: 1140px) {
+
+  .section2{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxes-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap; 
+    height: auto; 
+    width: 60%; 
+    margin-top: 25px;
+    margin-right: 0px;
+  }
+
+  .btn-touch1{
+    margin-top: 25px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+  }
+
+  @media (max-width: 850px) {
 
     .boxes-main {
-        width: 100%;
-        margin: 20px 0;
-        align-items: center;
-        height: auto;          
-        gap: 15px;
-        padding-bottom: 40px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap; 
+    height: auto; 
+    width: 80%; 
+    margin-top: 25px;
+    margin-right: 0px;
+  }
 
-    .phone {
-        margin: 0 auto;
-        width: 350px;
-        height: 500px;
-    }
+  .btn-touch1{
+    margin-top: 25px;
+    margin: auto;
+    padding: auto;
+  }
 
-    .box {
-        width: 200px;
-        height: 20px;
-        min-height: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        border: #000 2px solid;
-    }
+  .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+    margin: 0;
+    padding: 0;
+    background-position: cover;
+  }
 
-    .box-ineer h1{
-        font-size: 25px;
-        margin: 0px 0px ;
-    }
-    .btn-touch1{
-        margin-top: 15px;
-        padding: 15px 30px;
-    }
+  }
 
-    .box-ineer h3 {
-        margin-top: 5px;
-        font-size: 18px;
-    }
-
-     .box-ineer p {
-        font-size: 16px;
-    }
 }
-}
-/* ── 480px se chhota ── Small Mobile ── */
-@media (max-width: 480px) {
-
-    .phone {
-        width: 220px;       
-        height: 315px;     
-        margin: 0 auto;
-    }
-
-    .box {
-        width: 92%;
-        height: 120px;
-    }
-
-    .btn-touch1 {
-        padding: 15px 20px;
-        font-size: 12px;
-        margin: 15px auto;
-        display: block;
-    }
-}
-
 .section-3-main{
     width: 100%;
     height: 380px;
@@ -437,7 +470,7 @@ html,body{
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    padding-right:61px ;    
+    padding-right:61px;    
 }
 
 .section-3-main2 h2{
@@ -477,6 +510,7 @@ html,body{
 .btn-wrapper{
     display: flex;
     justify-content: end;
+    margin-top: 8px;
 }
 
             /* SECTION 4 */
